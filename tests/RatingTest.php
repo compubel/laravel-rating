@@ -26,14 +26,6 @@ class RatingTest extends TestCase
     /**
      * @test
      */
-    public function model()
-    {
-        $rating = factory(Rating::class)->create();
-    }
-
-    /**
-     * @test
-     */
     public function user_can_rate_a_post()
     {
         $user = factory(User::class)->create();
