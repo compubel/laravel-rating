@@ -2,8 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/compubel/laravel-rating.svg?style=flat-square)](https://packagist.org/packages/compubel/laravel-rating)
 [![Build Status](https://img.shields.io/travis/compubel/laravel-rating/master.svg?style=flat-square)](https://travis-ci.org/compubel/laravel-rating)
-[![Code Coverage](https://codecov.io/gh/compubel/compubel-rating/branch/master/graph/badge.svg)](https://codecov.io/gh/compubel/laravel-rating/branch/master)
-[![StyleCI](https://styleci.io/repos/174751442/shield)](https://styleci.io/repos/174751442)
+[![codecov](https://codecov.io/gh/compubel/laravel-rating/branch/master/graph/badge.svg)](https://codecov.io/gh/compubel/laravel-rating)[![StyleCI](https://styleci.io/repos/174751442/shield)](https://styleci.io/repos/174751442)
 [![Total Downloads](https://img.shields.io/packagist/dt/compubel/laravel-rating.svg?style=flat-square)](https://packagist.org/packages/compubel/laravel-rating)
 
 Associate ratings to any Eloquent model.
