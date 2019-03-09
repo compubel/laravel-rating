@@ -1,0 +1,43 @@
+{
+    "name": "compubel/laravel-rating",
+    "description": "Associate ratings to any Eloquent model",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jasper Briers",
+            "email": "jasper@compubel.be",
+            "homepage": "https://www.compubel.be"
+        }
+    ],
+    "homepage": "https://github.com/compubel/laravel-rating",
+    "keywords": ["Laravel", "laravel-rating", "rating"],
+    "require": {
+        "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Compubel\\Rating\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Compubel\\Rating\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Compubel\\Rating\\RatingServiceProvider"
+            ]
+        }
+    }
+}
