@@ -3,7 +3,6 @@
 namespace Compubel\Rating\Test;
 
 use Compubel\Rating\RatingServiceProvider;
-use Compubel\Rating\Test\Models\User;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
@@ -21,7 +20,7 @@ abstract class TestCase extends Orchestra
     }
 
     /**
-     * Define package providers
+     * Define package providers.
      *
      * @param  \Illuminate\Foundation\Application  $app
      * @return array

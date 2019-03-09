@@ -3,11 +3,11 @@
 namespace Compubel\Rating\Test;
 
 use BadMethodCallException;
-use Compubel\Rating\Exceptions\RatingAlreadyExists;
-use Compubel\Rating\Exceptions\ModelNotRateable;
-use Compubel\Rating\Test\Models\Member;
 use Compubel\Rating\Test\Models\Post;
 use Compubel\Rating\Test\Models\User;
+use Compubel\Rating\Test\Models\Member;
+use Compubel\Rating\Exceptions\ModelNotRateable;
+use Compubel\Rating\Exceptions\RatingAlreadyExists;
 
 class RatingTest extends TestCase
 {
@@ -15,9 +15,8 @@ class RatingTest extends TestCase
      * Information about the tests
      * - Users can rate posts, but not other users
      * - Posts can be rated
-     * - Members can rate other members
+     * - Members can rate other members.
      */
-
     public function setUp(): void
     {
         parent::setUp();

@@ -2,4 +2,6 @@
 
 namespace Compubel\Rating\Contracts;
 
-interface Rating extends Rateable, Rater {}
+interface Rating extends Rateable, Rater
+{
+}

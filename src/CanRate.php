@@ -2,10 +2,10 @@
 
 namespace Compubel\Rating;
 
-use Compubel\Rating\Contracts\Rateable;
 use Compubel\Rating\Contracts\Rating;
-use Compubel\Rating\Exceptions\RatingAlreadyExists;
+use Compubel\Rating\Contracts\Rateable;
 use Compubel\Rating\Exceptions\ModelNotRateable;
+use Compubel\Rating\Exceptions\RatingAlreadyExists;
 
 trait CanRate
 {
@@ -24,7 +24,7 @@ trait CanRate
     }
 
     /**
-     * Check if a model can be rated
+     * Check if a model can be rated.
      *
      * @param Model $model The model to check
      * @return bool
@@ -93,8 +93,7 @@ trait CanRate
             return false;
         }
 
-        if ($this->hasRated($model))
-        {
+        if ($this->hasRated($model)) {
             $this->deleteRatingFor($model);
         }
 
@@ -111,8 +110,7 @@ trait CanRate
      */
     public function rate($model, $rating, $can_update = true): bool
     {
-        if ($can_update === true)
-        {
+        if ($can_update === true) {
             return $this->updateRatingFor($model, $rating);
         }
 
