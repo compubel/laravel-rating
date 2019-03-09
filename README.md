@@ -6,12 +6,6 @@
 [![StyleCI](https://styleci.io/repos/174751442/shield)](https://styleci.io/repos/174751442)
 [![Total Downloads](https://img.shields.io/packagist/dt/compubel/laravel-rating.svg?style=flat-square)](https://packagist.org/packages/compubel/laravel-rating)
 
-
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Total Downloads][ico-downloads]][link-downloads]
-[![Build Status][ico-travis]][link-travis]
-[![StyleCI][ico-styleci]][link-styleci]
-
 Associate ratings to any Eloquent model.
 
 This package is based on [rennokki/rating](https://github.com/rennokki/rating) with some improvements:
