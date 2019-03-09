@@ -2,7 +2,8 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/compubel/laravel-rating.svg?style=flat-square)](https://packagist.org/packages/compubel/laravel-rating)
 [![Build Status](https://img.shields.io/travis/compubel/laravel-rating/master.svg?style=flat-square)](https://travis-ci.org/compubel/laravel-rating)
-[![codecov](https://codecov.io/gh/compubel/laravel-rating/branch/master/graph/badge.svg)](https://codecov.io/gh/compubel/laravel-rating)
+[![codecov](https://img.shields.io/codecov/c/github/compubel/laravel-rating.svg?style=flat-square)](https://codecov.io/gh/compubel/laravel-rating)
+[![Quality Score](https://img.shields.io/scrutinizer/g/compubel/laravel-rating.svg?style=flat-square)](https://scrutinizer-ci.com/g/compubel/laravel-rating)
 [![StyleCI](https://styleci.io/repos/174751442/shield)](https://styleci.io/repos/174751442)
 [![Total Downloads](https://img.shields.io/packagist/dt/compubel/laravel-rating.svg?style=flat-square)](https://packagist.org/packages/compubel/laravel-rating)
 
