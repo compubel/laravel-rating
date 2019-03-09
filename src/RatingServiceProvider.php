@@ -19,7 +19,7 @@ class RatingServiceProvider extends ServiceProvider
         $timestamp = date('Y_m_d_His');
 
         $this->publishes([
-            __DIR__.'/../database/migrations/2019_03_08_000000_create_rating_table.php' => database_path('/migrations/' . $timestamp .'_create_rating_table.php')
+            __DIR__.'/../database/migrations/2019_03_08_000000_create_rating_table.php' => database_path('/migrations/'.$timestamp.'_create_rating_table.php'),
         ], 'migrations');
 
         $this->publishes([
@@ -39,7 +39,7 @@ class RatingServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/rating.php', 'rating');
+        $this->mergeConfigFrom(__DIR__.'/../config/rating.php', 'rating');
 
         // Register the service the package provides.
 //        $this->app->singleton('laravel-rating', function ($app) {
@@ -59,7 +59,7 @@ class RatingServiceProvider extends ServiceProvider
 //    {
 //        return ['laravel-rating'];
 //    }
-    
+
     /**
      * Console-specific booting.
      *
@@ -69,7 +69,7 @@ class RatingServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__ . '/../config/rating.php' => config_path('rating.php'),
+            __DIR__.'/../config/rating.php' => config_path('rating.php'),
         ], 'rating.config');
 
         // Registering package commands.

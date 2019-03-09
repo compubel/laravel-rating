@@ -2,8 +2,8 @@
 
 namespace Compubel\Rating\Exceptions;
 
-use Compubel\Rating\Contracts\Rateable;
 use InvalidArgumentException;
+use Compubel\Rating\Contracts\Rateable;
 
 class ModelNotRateable extends InvalidArgumentException
 {
