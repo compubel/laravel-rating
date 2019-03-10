@@ -145,11 +145,11 @@ $ composer test
 
 ## Changelog
 
-Please see the [changelog](CHANGELOG.md) for more information on what has changed recently.
+Please see the [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
 ## Contributing
 
-Please see [contributing.md](CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 
