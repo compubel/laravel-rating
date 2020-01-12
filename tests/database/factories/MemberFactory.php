@@ -10,8 +10,10 @@
 |
 */
 
+use Illuminate\Support\Str;
+
 $factory->define(\Compubel\Rating\Test\Models\Member::class, function () {
     return [
-        'name'           => str_random(10),
+        'name'           => Str::random(10),
     ];
 });
