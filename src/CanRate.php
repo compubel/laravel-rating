@@ -2,8 +2,8 @@
 
 namespace Compubel\Rating;
 
-use Compubel\Rating\Contracts\Rating;
 use Compubel\Rating\Contracts\Rateable;
+use Compubel\Rating\Contracts\Rating;
 use Compubel\Rating\Exceptions\ModelNotRateable;
 use Compubel\Rating\Exceptions\RatingAlreadyExists;
 

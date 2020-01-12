@@ -2,8 +2,6 @@
 
 namespace Compubel\Rating;
 
-use Compubel\Rating\Contracts\Rateable;
-
 trait CanBeRated
 {
     /**
