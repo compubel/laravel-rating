@@ -1,2 +1,7 @@
 build:
     image: default-jammy
+    nodes:
+        analysis:
+            tests:
+                override:
+                    - php-scrutinizer-run
