@@ -7,7 +7,7 @@ trait CanBeRated
     /**
      * Relationship for models that rated this model.
      *
-     * @param Model $model The model types of the results.
+     * @param  Model  $model  The model types of the results.
      * @return morphToMany The relationship.
      */
     public function raters($model = null)

@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-rating` will be documented in this file.
 
+## Version 1.4.1
+
+- Apply StyleCI code style fixes
+
 ## Version 1.4.0
 
 - Add support for Laravel 12 and 13

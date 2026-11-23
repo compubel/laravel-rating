@@ -45,9 +45,9 @@ class RatingServiceProvider extends ServiceProvider
 //        $this->app->singleton('laravel-rating', function ($app) {
 //            return new laravel-rating;
 //        });
-//	    $this->app->singleton(Rating::class, function () {
-//		    return new Rating();
-//	    });
+        //	    $this->app->singleton(Rating::class, function () {
+        //		    return new Rating();
+        //	    });
     }
 
     /**

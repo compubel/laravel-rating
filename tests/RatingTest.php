@@ -5,8 +5,6 @@ namespace Compubel\Rating\Test;
 use BadMethodCallException;
 use Compubel\Rating\Exceptions\ModelNotRateable;
 use Compubel\Rating\Exceptions\RatingAlreadyExists;
-use Compubel\Rating\Test\Models\Member;
-use Compubel\Rating\Test\Models\Post;
 use Compubel\Rating\Test\Models\User;
 
 class RatingTest extends TestCase

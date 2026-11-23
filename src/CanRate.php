@@ -12,7 +12,7 @@ trait CanRate
     /**
      * Relationship for models that this model currently rated.
      *
-     * @param Model $model The model types of the results.
+     * @param  Model  $model  The model types of the results.
      * @return morphToMany The relationship.
      */
     public function ratings($model = null)
@@ -26,7 +26,7 @@ trait CanRate
     /**
      * Check if a model can be rated.
      *
-     * @param Model $model The model to check
+     * @param  Model  $model  The model to check
      * @return bool
      */
     public function isRateable($model): bool
@@ -41,7 +41,7 @@ trait CanRate
     /**
      * Check if the current model is rating another model.
      *
-     * @param Model $model The model which will be checked against.
+     * @param  Model  $model  The model which will be checked against.
      * @return bool
      */
     public function hasRated($model): bool
@@ -56,8 +56,8 @@ trait CanRate
     /**
      * Add rating for a certain model.
      *
-     * @param Model $model The model which will be rated.
-     * @param float $rating The rate amount.
+     * @param  Model  $model  The model which will be rated.
+     * @param  float  $rating  The rate amount.
      * @return bool
      */
     public function addRatingFor($model, $rating): bool
@@ -83,8 +83,8 @@ trait CanRate
     /**
      * Update or add rating for a certain model.
      *
-     * @param Model $model The model which will be rated.
-     * @param float $rating The rate amount.
+     * @param  Model  $model  The model which will be rated.
+     * @param  float  $rating  The rate amount.
      * @return bool
      */
     public function updateRatingFor($model, $rating): bool
@@ -103,9 +103,9 @@ trait CanRate
     /**
      * Rate a certain model.
      *
-     * @param Model $model The model which will be rated.
-     * @param float $rating The rate amount.
-     * @param bool $can_update Set to false if a rating can only be added once
+     * @param  Model  $model  The model which will be rated.
+     * @param  float  $rating  The rate amount.
+     * @param  bool  $can_update  Set to false if a rating can only be added once
      * @return bool
      */
     public function rate($model, $rating, $can_update = true): bool
@@ -120,7 +120,7 @@ trait CanRate
     /**
      * Delete rating for a certain model.
      *
-     * @param Model $model The model which will be unrated.
+     * @param  Model  $model  The model which will be unrated.
      * @return bool
      */
     public function deleteRatingFor($model): bool
@@ -139,7 +139,7 @@ trait CanRate
     /**
      * Unrate a certain model.
      *
-     * @param Model $model The model which will be unrated.
+     * @param  Model  $model  The model which will be unrated.
      * @return bool
      */
     public function unrate($model): bool
