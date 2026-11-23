@@ -1,7 +1,7 @@
 # Laravel Rating
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/compubel/laravel-rating.svg?style=flat-square)](https://packagist.org/packages/compubel/laravel-rating)
-[![Build Status](https://img.shields.io/travis/compubel/laravel-rating/master.svg?style=flat-square)](https://travis-ci.org/compubel/laravel-rating)
+[![Tests](https://github.com/compubel/laravel-rating/actions/workflows/tests.yml/badge.svg)](https://github.com/compubel/laravel-rating/actions/workflows/tests.yml)
 [![codecov](https://img.shields.io/codecov/c/github/compubel/laravel-rating.svg?style=flat-square)](https://codecov.io/gh/compubel/laravel-rating)
 [![Quality Score](https://img.shields.io/scrutinizer/g/compubel/laravel-rating.svg?style=flat-square)](https://scrutinizer-ci.com/g/compubel/laravel-rating)
 [![StyleCI](https://styleci.io/repos/174751442/shield)](https://styleci.io/repos/174751442)
@@ -14,6 +14,11 @@ This package is based on [rennokki/rating](https://github.com/rennokki/rating) w
 - Exceptions
 - Sum of ratings
 - More testing
+
+## Requirements
+
+- PHP 8.2 up to 8.5
+- Laravel 12 or 13
 
 ## Installation
 

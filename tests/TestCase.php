@@ -3,20 +3,40 @@
 namespace Compubel\Rating\Test;
 
 use Compubel\Rating\RatingServiceProvider;
+use Compubel\Rating\Test\Models\Member;
+use Compubel\Rating\Test\Models\Post;
+use Compubel\Rating\Test\Models\User;
+use Illuminate\Support\Str;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
 {
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
 
         $this->loadLaravelMigrations(['--database' => 'testbench']);
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
-        $this->withFactories(__DIR__.'/database/factories');
+    }
 
-        $this->artisan('migrate', ['--database' => 'testbench'])->run();
+    protected function createUser(): User
+    {
+        return User::create([
+            'name' => 'Name'.Str::random(5),
+            'email' => Str::random(5).'@example.com',
+            'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
+        ]);
+    }
+
+    protected function createPost(): Post
+    {
+        return Post::create(['name' => 'Post '.Str::random(5)]);
+    }
+
+    protected function createMember(): Member
+    {
+        return Member::create(['name' => Str::random(10)]);
     }
 
     /**

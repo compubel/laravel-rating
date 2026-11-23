@@ -17,7 +17,7 @@ class CreateRatingTable extends Migration
             $table->integer('rater_id')->nullable();
             $table->string('rateable_type');
             $table->string('rateable_id');
-            $table->float('rating', 9, 2);
+            $table->decimal('rating', 9, 2);
             $table->timestamps();
         });
     }
